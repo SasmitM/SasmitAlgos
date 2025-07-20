@@ -1,0 +1,38 @@
+# Ignore IntelliJ IDEA project files (crucial for sub-projects)
+# This pattern says: ignore any .idea/ folder or .iml file found anywhere
+# within the repository, but not at the root level if Sasmit_Algos itself
+# were ever opened as an IntelliJ project (which we aren't doing directly).
+*/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Standard ignores for Java (assuming you'll write Java code)
+*.class
+/target/
+/build/
+*.log
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.txt
+
+# Maven/Gradle specific ignores (if you use these build tools for sub-projects)
+.gradle/
+.idea/gradle/
+# For Maven:
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.properties
+
+# Operating System specific files
+.DS_Store
+.Trashes
+Thumbs.db
